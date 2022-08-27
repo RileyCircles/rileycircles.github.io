@@ -206,28 +206,59 @@
 			height: 0;
 			box-shadow: 6px 6px 10px hsl(206.5, 0%, 75%);
 		}
-		.work_column {
-			padding: 0 20px 15px 20px;
-			flex: 50%;
-		}
-		#project1 {
-			background: url(screen1.webp);
-			background-size: cover;
-			background-position: center;
-		}
-		.overlay {
+		.work_unit_overlay {
 			opacity: 0;
-			transition: .25s ease;
-			background-color: #000;
+			transition: .5s ease;
+			background-color: black;
 			position: absolute;
 			top: 0;
 			left:0;
 			width: 100%;
 			height: 100%;
 		}
-		.overlay_text {
+		.work_unit_overlay_text {
+			transition: .25s ease;
+			transition-delay: .1s;
+			padding-top: 15px;
 			color: white;
-			padding: 20px
+			opacity: 0;
+			text-align: center;
+			position: absolute;
+			top: 0;
+			left:0;
+			width: 100%;
+			height: 100%;
+		}
+		.work_unit_overlay_link {
+			transition: 0.5s ease;
+			opacity: 0;
+			position: absolute;
+			bottom: 0;
+			right:0;
+			text-align:right;
+			color:white;
+			margin: 0 10px 5px 0;
+		}
+		.work_unit:hover .work_unit_overlay {
+			opacity: 0.5;
+		}
+		.work_unit:hover .work_unit_overlay_text {
+			opacity: 1;
+		}
+		.work_unit:hover .work_unit_overlay_link {
+			opacity: 1;
+		}
+		.work_column {
+			padding: 0 20px 15px 20px;
+			flex: 50%;
+		}
+		.work_column p, span, h3 {
+			font-family: Nunito Sans;
+		}
+		#project1 {
+			background: url(screen1.webp);
+			background-size: cover;
+			background-position: center;
 		}
 		.work_column:hover .overlay {
 			opacity: 1;
@@ -238,8 +269,12 @@
 			}
 		}
 	</style>
+
+
 	
 				<!-- Navigation -->
+
+
 	
 	<div class="nav_container">
 		<div class="icon_logo">
@@ -253,7 +288,11 @@
 </head>
 <body style="padding: 0px;">
 
+
+
 				<!-- Demoreel section -->
+
+
 
 <section class="scroll_section" id="demo" style="background-color: #eeeeee;">
 	<div style="height: 100vh; min-height: 960px;">
@@ -319,7 +358,11 @@
 	</div>
 </section>
 
+
+
 				<!-- About Section -->
+
+
 
 <section class="scroll_section" id="about" style="background: white;">
 	<div class="about_container">
@@ -347,7 +390,11 @@
 	</div>
 </section>
 
+
+
 				<!-- Work Section -->
+
+
 
 <section class="scroll_section" id="work">
 	<div class="work_container">
@@ -356,7 +403,9 @@
 			<h1 style="font-size: 75px">Work</h1>
 		</div>
 		
+		
 				<!-- Game Projects Grid -->
+				
 		
 		<h1>Game Projects</h1>
 		<div class="cross_parade"></div>
@@ -364,23 +413,53 @@
 				<!-- Game Projects First Row -->
 		
 		<div class="work_row">
+		
+				<!-- Blunderbuss -->
+		
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://kralikogames.itch.io/blunder-bus" style="margin: 0; padding: 0;" target="_blank">
 					<div class="work_unit" style="background: url('screen1.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros vel dictum feugiat.</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>itch.io</i> <b>></b></span>
+						</div>
 					</div>
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Blunderbuss</h3>
 			</div>
+			
+				<!-- Operation Bubbly -->
+			
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://kralikogames.itch.io/operationbubbly" style="margin: 0; padding: 0;" target="_blank">
 					<div class="work_unit" style="background: url('screen2.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros vel dictum feugiat.</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>itch.io</i> <b>></b></span>
+						</div>
 					</div>
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Operation Bubbly</h3>
 			</div>
+			
+				<!-- Bug -->
+			
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://kralikogames.itch.io/bug" style="margin: 0; padding: 0;" target="_blank">
 					<div class="work_unit" style="background: url('screen3.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros vel dictum feugiat.</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>itch.io</i> <b>></b></span>
+						</div>
 					</div>
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Bug</h3>
@@ -390,23 +469,53 @@
 				<!-- Game Projects Second Row -->
 		
 		<div class="work_row">
+		
+				<!-- Hammer and the Shamblers -->
+		
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://kralikogames.itch.io/hammer-and-the-shamblers" style="margin: 0; padding: 0;" target="_blank">
 					<div class="work_unit" style="background: url('screen4.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros vel dictum feugiat.</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>itch.io</i> <b>></b></span>
+						</div>
 					</div>
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Hammer and the Shamblers</h3>
 			</div>
+			
+				<!-- Sunshine Globs -->
+			
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://cwechtler.github.io/Personal-WebSite/Games/Sunshine%20Globs%20v1.4/index.html" style="margin: 0; padding: 0;" target="_blank">
 					<div class="work_unit" style="background: url('screen5.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros vel dictum feugiat.</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>github.io</i> <b>></b></span>
+						</div>
 					</div>
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Sunshine Globs</h3>
 			</div>
+			
+				<!-- C-GOL and the Beast -->
+			
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://apps.apple.com/us/app/c-gol-and-the-beast/id1606463595" style="margin: 0; padding: 0;" target="_blank">
 					<div class="work_unit" style="background: url('screen6.webp'); background-size: cover; background-position: center;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros vel dictum feugiat.</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>apps.apple.com</i> <b>></b></span>
+						</div>
 					</div>
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">C-GOL and the Beast</h3>
@@ -658,22 +767,43 @@
 		<div class="work_row">
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://rileycircles.bandcamp.com/album/sunshine-globs-on-the-precipice-of-avarice-demo" style="margin: 0; padding: 0;" target="_blank">
-				<div class="work_unit" style="padding-bottom:100%; background: url('sunshineglobs.jpg'); background-size: cover;">
-				</div>
+					<div class="work_unit" style="padding-bottom:100%; background: url('sunshineglobs.jpg'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros vel dictum feugiat.</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>bandcamp.com</i> <b>></b></span>
+						</div>
+					</div>
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Sunshine Globs on the Precipice of Avarice (Demo)</h3>
 			</div>
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://iamflown.bandcamp.com/album/divine-fulcrum" style="margin: 0; padding: 0;" target="_blank">
-				<div class="work_unit" style="padding-bottom:100%; background: url('flown.jpg'); background-size: cover;">
-				</div>
+					<div class="work_unit" style="padding-bottom:100%; background: url('flown.jpg'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros vel dictum feugiat.</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>bandcamp.com</i> <b>></b></span>
+						</div>
+					</div>
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Flown - Divine Fulcrum</h3>
 			</div>
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://soundcloud.com/rileycircles/sets/video-game-music?si=6f58336957b043f782c206b291eaca19" style="margin: 0; padding: 0;" target="_blank">
-				<div class="work_unit" style="padding-bottom:100%; background: url('rileycircles.jpg'); background-size: cover;">
-				</div>
+					<div class="work_unit" style="padding-bottom:100%; background: url('rileycircles.jpg'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet eros vel dictum feugiat.</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>soundcloud.com</i> <b>></b></span>
+						</div>
+					</div>
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Video Game Music Playlist</h3>
 			</div>
