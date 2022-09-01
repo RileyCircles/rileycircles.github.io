@@ -190,6 +190,12 @@
 			margin: auto;
 			padding-top: 5vw;
 		}
+		.work_intermedium_small {
+			width: 100%;
+			max-width:960px;
+			margin: auto;
+			padding-top: 5vw;
+		}
 		.cross_parade span{
 			margin: 0px 20px 0px 20px;
 		}
@@ -218,15 +224,44 @@
 		.work_unit_overlay_text {
 			transition: .25s ease;
 			transition-delay: .1s;
-			padding-top: 15px;
 			color: white;
 			opacity: 0;
-			text-align: center;
+			text-align: left;
 			position: absolute;
 			top: 0;
 			left:0;
 			width: 100%;
 			height: 100%;
+			line-height: 120%;
+		}
+		.work_unit_overlay_music {
+			opacity: 0;
+			transition: .5s ease;
+			background-color: black;
+			position: absolute;
+			bottom: 0;
+			left:0;
+			width: 100%;
+			height: 75px;
+		}
+		.work_unit_overlay_music_text {
+			transition: .25s ease;
+			transition-delay: .1s;
+			color: white;
+			opacity: 0;
+			text-align: left;
+			position: absolute;
+			bottom: 0;
+			left:0;
+			width: 100%;
+			height: 75px;
+			line-height: 120%;
+		}
+		.work_unit_overlay_text p {
+			padding: 0 10px 0 10px;
+		}
+		.work_unit_overlay_music_text p {
+			padding: 0 10px 0 10px;
 		}
 		.work_unit_overlay_link {
 			transition: 0.5s ease;
@@ -239,9 +274,15 @@
 			margin: 0 10px 5px 0;
 		}
 		.work_unit:hover .work_unit_overlay {
+			opacity: 0.7;
+		}
+		.work_unit:hover .work_unit_overlay_music {
 			opacity: 0.5;
 		}
 		.work_unit:hover .work_unit_overlay_text {
+			opacity: 1;
+		}
+		.work_unit:hover .work_unit_overlay_music_text {
 			opacity: 1;
 		}
 		.work_unit:hover .work_unit_overlay_link {
@@ -279,6 +320,9 @@
 				float: right;
 				margin: 145px 20px 20px 2vw;
 			}
+			.work_intermedium {
+				display: none;
+			}
 		}
 		@media only screen and (min-width: 960px) {
 			.slideshow {
@@ -291,6 +335,9 @@
 				box-shadow: 6px 6px 10px hsl(206.5, 0%, 75%);
 				float: right;
 				margin: 145px 20px 20px 2vw;
+			}
+			.work_intermedium_small {
+				display: none;
 			}
 		}
 	</style>
@@ -792,8 +839,8 @@
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://rileycircles.bandcamp.com/album/sunshine-globs-on-the-precipice-of-avarice-demo" style="margin: 0; padding: 0;" target="_blank">
 					<div class="work_unit" style="padding-bottom:100%; background: url('sunshineglobs.jpg'); background-size: cover;">
-						<div class="work_unit_overlay"></div>
-						<div class="work_unit_overlay_text">
+						<div class="work_unit_overlay_music"></div>
+						<div class="work_unit_overlay_music_text">
 							<p style="font-family: Nunito Sans;">My EP!</p>
 						</div>
 						<div class="work_unit_overlay_link">
@@ -806,8 +853,8 @@
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://iamflown.bandcamp.com/album/divine-fulcrum" style="margin: 0; padding: 0;" target="_blank">
 					<div class="work_unit" style="padding-bottom:100%; background: url('flown.jpg'); background-size: cover;">
-						<div class="work_unit_overlay"></div>
-						<div class="work_unit_overlay_text">
+						<div class="work_unit_overlay_music"></div>
+						<div class="work_unit_overlay_music_text">
 							<p style="font-family: Nunito Sans;">Mastering</p>
 						</div>
 						<div class="work_unit_overlay_link">
@@ -820,8 +867,8 @@
 			<div class="work_column" style="flex: 33.33%;">
 				<a href="https://soundcloud.com/rileycircles/sets/video-game-music?si=6f58336957b043f782c206b291eaca19" style="margin: 0; padding: 0;" target="_blank">
 					<div class="work_unit" style="padding-bottom:100%; background: url('rileycircles.jpg'); background-size: cover;">
-						<div class="work_unit_overlay"></div>
-						<div class="work_unit_overlay_text">
+						<div class="work_unit_overlay_music"></div>
+						<div class="work_unit_overlay_music_text">
 							<p style="font-family: Nunito Sans;">Songs from game projects on this page and more!</p>
 						</div>
 						<div class="work_unit_overlay_link">
@@ -831,6 +878,464 @@
 				</a>
 				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Video Game Music Playlist</h3>
 			</div>
+		</div>
+	</div>
+
+
+				<!-- MOBILE VERSION -->
+
+
+	<div class="work_intermedium_small">
+		<div class="work_header">
+			<h1 style="font-size: 75px">Work</h1>
+		</div>
+		
+		
+				<!-- Game Projects Grid -->
+				
+		
+		<h1>Game Projects</h1>
+		<div class="cross_parade"></div>
+		
+				<!-- Game Projects First Row -->
+		
+		<div class="work_row">
+		
+				<!-- Blunderbuss -->
+		
+			<div class="work_column" style="flex: 33.33%;">
+				<a href="https://kralikogames.itch.io/blunder-bus" style="margin: 0; padding: 0;" target="_blank">
+					<div class="work_unit" style="background: url('screen1.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Made in: Godot <br>Made for: Brackey's Game Jam 2021.2 <br>Team: Kraliko Games <br>Role: Sound Designer, Composer, Audio Programmer</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>itch.io</i> <b>></b></span>
+						</div>
+					</div>
+				</a>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Blunderbuss</h3>
+			</div>
+			
+				<!-- Operation Bubbly -->
+			
+			<div class="work_column" style="flex: 33.33%;">
+				<a href="https://kralikogames.itch.io/operationbubbly" style="margin: 0; padding: 0;" target="_blank">
+					<div class="work_unit" style="background: url('screen2.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Made in: Godot <br>Made for: Ludum Dare 49 <br>Team: Kraliko Games <br>Role: Sound Designer, Composer, Audio Programmer</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>itch.io</i> <b>></b></span>
+						</div>
+					</div>
+				</a>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Operation Bubbly</h3>
+			</div>
+		</div>
+		
+				<!-- Game Projects Second Row -->
+				
+		<div class="work_row">
+			
+				<!-- Bug -->
+			
+			<div class="work_column" style="flex: 33.33%;">
+				<a href="https://kralikogames.itch.io/bug" style="margin: 0; padding: 0;" target="_blank">
+					<div class="work_unit" style="background: url('screen3.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Made in: Godot <br>Made for: Game Off 2021 <br>Team: Kraliko Games <br>Role: Sound Designer, Composer, Audio Programmer </p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>itch.io</i> <b>></b></span>
+						</div>
+					</div>
+				</a>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Bug</h3>
+			</div>
+
+				<!-- |fault\ -->
+		
+			<div class="work_column" style="flex: 33.33%;">
+				<a href="https://woodenswords.itch.io/fault" style="margin: 0; padding: 0;" target="_blank">
+					<div class="work_unit" style="background: url('screen7.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Made in: Unreal Engine <br>Made for: Ludum Dare 49 <br>Team: Wooden Swords <br>Role: Sound Designer, Composer, Game Designer, Writer</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>itch.io</i> <b>></b></span>
+						</div>
+					</div>
+				</a>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">|fault\</h3>
+			</div>
+		</div>
+		
+				<!-- Game Projects Third Row -->
+		
+		<div class="work_row">
+		
+			
+				<!-- Sunshine Globs -->
+			
+			<div class="work_column" style="flex: 33.33%;">
+				<a href="https://cwechtler.github.io/Personal-WebSite/Games/Sunshine%20Globs%20v1.4/index.html" style="margin: 0; padding: 0;" target="_blank">
+					<div class="work_unit" style="background: url('screen5.webp'); background-size: cover;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Made in: Unity <br>Made for: Global Game Jam 2021 <br>Team: Ballistic Abyssiles <br>Role: Creative Director, Sound Designer, Composer
+</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>github.io</i> <b>></b></span>
+						</div>
+					</div>
+				</a>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Sunshine Globs</h3>
+			</div>
+			
+				<!-- C-GOL and the Beast -->
+			
+			<div class="work_column" style="flex: 33.33%;">
+				<a href="https://apps.apple.com/us/app/c-gol-and-the-beast/id1606463595" style="margin: 0; padding: 0;" target="_blank">
+					<div class="work_unit" style="background: url('screen6.webp'); background-size: cover; background-position: center;">
+						<div class="work_unit_overlay"></div>
+						<div class="work_unit_overlay_text">
+							<p style="font-family: Nunito Sans;">Made in: Unity <br>Made for:Global Game Jam 2022 <br>Team: Johnsensei Games <br>Role: Sound and Music Design</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>apps.apple.com</i> <b>></b></span>
+						</div>
+					</div>
+				</a>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">C-GOL and the Beast</h3>
+			</div>
+		</div>
+		
+				<!-- Sound Redesign Grid -->
+		
+		<h1>Sound Redesigns</h1>
+		<div class="cross_parade"></div>
+		
+				<!-- Sound Designs First Row -->
+		
+		<div class="work_row">
+		
+				<!-- Halo -->
+		
+			<div class="work_column">
+				<div class="work_unit" style="overflow: hidden;">
+				<iframe 
+				style="position: absolute; top: 0; left:0; width: 100%; height: 100%; border: 0;"
+					loading="lazy";
+					srcdoc="<style>
+					* {
+						padding: 0;
+						margin: 0;
+						overflow: hidden;
+					}
+					body, html {
+						height: 100%;
+					}
+					img, svg {
+						position: absolute;
+						width: 100%;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+					svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+						transition: all 250ms ease-in-out;
+					}
+						body:hover svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 0%, 10%));
+						transform: scale(1.2);
+					}
+				</style>
+				<a href='https://www.youtube.com/embed/TDR8OlUkRAY?autoplay=1&hd=1&rel=0&color=white'>
+					<img src='halo.jpg' alt='Halo Infinite Sound Redesign'>
+					<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
+				</a>
+				"
+				src="https://www.youtube.com/embed/TDR8OlUkRAY" 
+				title="Halo Infinite Sound Redesign"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+				allowfullscreen>
+				</iframe>
+				</div>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Halo Infinite Sound Redesign</h3>
+			</div>
+		</div>
+		
+				<!-- Sound Design Second Row -->
+		
+		<div class="work_row">
+		
+				<!-- God of War -->
+		
+			<div class="work_column">
+				<div class="work_unit" style="overflow: hidden;">
+				<iframe 
+				style="position: absolute; top: 0; left:0; width: 100%; height: 100%; border: 0;"
+					loading="lazy";
+					srcdoc="<style>
+					* {
+						padding: 0;
+						margin: 0;
+						overflow: hidden;
+					}
+					body, html {
+						height: 100%;
+					}
+					img, svg {
+						position: absolute;
+						width: 100%;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+					svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+						transition: all 250ms ease-in-out;
+					}
+						body:hover svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 0%, 10%));
+						transform: scale(1.2);
+					}
+				</style>
+				<a href='https://youtube.com/embed/t12s832cWQc?autoplay=1&hd=1&rel=0&color=white'>
+					<img src='god_of_war.jpg' alt='God of War Sound Redesign'>
+					<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
+				</a>
+				"
+				src="https://youtube.com/embed/t12s832cWQc" 
+				title="God of War Sound Redesign"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+				allowfullscreen>
+				</iframe>
+				</div>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">God of War Sound Redesign</h3>
+			</div>
+		</div>
+		
+				<!-- Sound Design Third Row -->
+		
+		<div class="work_row">
+		
+				<!-- Slime Rancher 2 -->
+		
+			<div class="work_column">
+				<div class="work_unit" style="overflow: hidden;">
+				<iframe 
+				style="position: absolute; top: 0; left:0; width: 100%; height: 100%; border: 0;"
+					loading="lazy";
+					srcdoc="<style>
+					* {
+						padding: 0;
+						margin: 0;
+						overflow: hidden;
+					}
+					body, html {
+						height: 100%;
+					}
+					img, svg {
+						position: absolute;
+						width: 100%;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+					svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+						transition: all 250ms ease-in-out;
+					}
+						body:hover svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 0%, 10%));
+						transform: scale(1.2);
+					}
+				</style>
+				<a href='https://youtube.com/embed/nQ_n1edVEHE?autoplay=1&hd=1&rel=0&color=white'>
+					<img src='slime_rancher.jpg' alt='Slime Rancher 2 Sound Redesign'>
+					<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
+				</a>
+				"
+				src="https://youtube.com/embed/nQ_n1edVEHE" 
+				title="Slime Rancher 2 Sound Redesign"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+				allowfullscreen>
+				</iframe>
+				</div>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Slime Rancher 2 Sound Redesign</h3>
+			</div>
+		</div>
+		
+				<!-- Animation/etc Grid -->
+		
+		<h1>Animation/etc</h1>
+		<div class="cross_parade"></div>
+		
+				<!-- Animation First Row -->
+		
+		<div class="work_row">
+			<div class="work_column">
+				<div class="work_unit" style="overflow: hidden;">
+				<iframe 
+				style="position: absolute; top: 0; left:0; width: 100%; height: 100%; border: 0;"
+					loading="lazy";
+					srcdoc="<style>
+					* {
+						padding: 0;
+						margin: 0;
+						overflow: hidden;
+					}
+					body, html {
+						height: 100%;
+					}
+					img, svg {
+						position: absolute;
+						width: 100%;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+					svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+						transition: all 250ms ease-in-out;
+					}
+						body:hover svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 0%, 10%));
+						transform: scale(1.2);
+					}
+				</style>
+				<a href='https://www.youtube.com/embed/JTF0HISoVH0?autoplay=1&hd=1&rel=0&color=white'>
+					<img src='reddino.png' alt='Red Dino Animation Sound Design & Music'>
+					<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
+				</a>
+				"
+				src="https://www.youtube.com/embed/JTF0HISoVH0" 
+				title="Red Dino Animation Sound Design & Music"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+				allowfullscreen>
+				</iframe>
+				</div>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Red Dino Animation Sound Design & Music</h3>
+			</div>
+		</div>
+		
+				<!-- Animation Second Row -->
+		
+		<div class="work_row">
+			<div class="work_column">
+				<div class="work_unit" style="overflow: hidden;">
+				<iframe 
+				style="position: absolute; top: 0; left:0; width: 100%; height: 100%; border: 0;"
+					loading="lazy";
+					srcdoc="<style>
+					* {
+						padding: 0;
+						margin: 0;
+						overflow: hidden;
+					}
+					body, html {
+						height: 100%;
+					}
+					img, svg {
+						position: absolute;
+						width: 100%;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+					svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+						transition: all 250ms ease-in-out;
+					}
+						body:hover svg {
+						filter: drop-shadow(1px 1px 10px hsl(206.5, 0%, 10%));
+						transform: scale(1.2);
+					}
+				</style>
+				<a href='https://www.youtube.com/embed/thKu-Ve9s84?autoplay=1&hd=1&rel=0&color=white'>
+					<img src='podcast.png' alt='Storytime Podcast Intro Sound Design'>
+					<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
+				</a>
+				"
+				src="https://www.youtube.com/embed/thKu-Ve9s84" 
+				title="Storytime Podcast Intro Sound Design"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" 
+				allowfullscreen>
+				</iframe>
+				</div>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Storytime Podcast Intro Sound Design</h3>
+			</div>
+		</div>
+		
+				<!-- Music Grid -->
+		
+		<h1>Music</h1>
+		<div class="cross_parade"></div>
+		
+				<!-- Music First Row -->
+		
+		<div class="work_row">
+			<div class="work_column">
+				<a href="https://rileycircles.bandcamp.com/album/sunshine-globs-on-the-precipice-of-avarice-demo" style="margin: 0; padding: 0;" target="_blank">
+					<div class="work_unit" style="padding-bottom:100%; background: url('sunshineglobs.jpg'); background-size: cover;">
+						<div class="work_unit_overlay_music"></div>
+						<div class="work_unit_overlay_music_text">
+							<p style="font-family: Nunito Sans;">My EP!</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>bandcamp.com</i> <b>></b></span>
+						</div>
+					</div>
+				</a>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Sunshine Globs on the Precipice of Avarice (Demo)</h3>
+			</div>
+			<div class="work_column">
+				<a href="https://iamflown.bandcamp.com/album/divine-fulcrum" style="margin: 0; padding: 0;" target="_blank">
+					<div class="work_unit" style="padding-bottom:100%; background: url('flown.jpg'); background-size: cover;">
+						<div class="work_unit_overlay_music"></div>
+						<div class="work_unit_overlay_music_text">
+							<p style="font-family: Nunito Sans;">Mastering</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>bandcamp.com</i> <b>></b></span>
+						</div>
+					</div>
+				</a>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Flown - Divine Fulcrum</h3>
+			</div>
+		</div>
+		
+				<!-- Music Second Row -->
+		
+		<div class="work_row">
+			<div class="work_column">
+				<a href="https://soundcloud.com/rileycircles/sets/video-game-music?si=6f58336957b043f782c206b291eaca19" style="margin: 0; padding: 0;" target="_blank">
+					<div class="work_unit" style="padding-bottom:100%; background: url('rileycircles.jpg'); background-size: cover;">
+						<div class="work_unit_overlay_music"></div>
+						<div class="work_unit_overlay_music_text">
+							<p style="font-family: Nunito Sans;">Songs from game projects on this page and more!</p>
+						</div>
+						<div class="work_unit_overlay_link">
+							<span style="font-family: Nunito Sans;"><i>soundcloud.com</i> <b>></b></span>
+						</div>
+					</div>
+				</a>
+				<h3 style="margin-top:20px; text-align: center; font-weight:normal;">Video Game Music Playlist</h3>
+			</div>
+			<div class="work_column"></div>
 		</div>
 	</div>
 	</div>
